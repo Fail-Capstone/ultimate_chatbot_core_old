@@ -1,8 +1,17 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from predict import get_answer
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_orgins = ["*"],
+    allow_credentials = True,
+    allow_methods = ["*"],
+    allow_headers=["*"]
+)
 
 class Question(BaseModel):
     question: str
