@@ -1,26 +1,28 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from flask_pymongo import PyMongo
 from predict import get_answer
 
-app = FastAPI()
+# Init app
+app = Flask(__name__)
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_orgins = ["*"],
-    allow_credentials = True,
-    allow_methods = ["*"],
-    allow_headers=["*"]
-)
+# Flask cors
+CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
-class Question(BaseModel):
-    question: str
+# connect your mongodb after installation
+app.config["MONGO_URI"] = "mongodb://admin:admin@chatbot.2qttl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+mongo = PyMongo(app)
 
-@app.post('/')
-async def receiveAnswer(question: Question):
-    answer = get_answer(question.question)
-    return answer
+@app.route("/question", methods=['POST'])
+def getQuestion():
+    try:
+        data = request.get_json()
+        question = data['question']
+        answer = get_answer(question)
+        return jsonify({"answer": answer})
+    except Exception as e:
+        return jsonify({"error": str(e)})
 
-@app.get('/')
-async def home():
-    return 'Đây là home'
+if __name__ == '__main__':
+    app.run(host='localhost', port=6000)

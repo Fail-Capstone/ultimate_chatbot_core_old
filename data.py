@@ -1,6 +1,6 @@
 import json
 from text_preprocess import text_preprocess
-with open('intent1.json') as file:
+with open('intent1.json',encoding="utf8") as file:
   data = json.loads(file.read())
 
 

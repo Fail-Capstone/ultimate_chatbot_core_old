@@ -1,7 +1,7 @@
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+# from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from data import get_dbtrain
@@ -33,8 +33,7 @@ class LogisticRegression_Model(object):
     @staticmethod
     def _init_pipeline():
         pipe_line = Pipeline([
-            ("vect", CountVectorizer()),
-            ("tfidf", TfidfTransformer()),
+            ("vect", TfidfVectorizer(analyzer='word', ngram_range=(2,3), max_df=0.05)),
             ("clf", LogisticRegression(C=212.10, max_iter=10000, solver='lbfgs', multi_class='multinomial'))
         ])
 
@@ -47,8 +46,7 @@ class SVM_Model(object):
     @staticmethod
     def _init_pipeline():
         pipe_line = Pipeline([
-            ("vect", CountVectorizer()),
-            ("tfidf", TfidfTransformer()),
+            ("vect", TfidfVectorizer(analyzer='word', ngram_range=(2,3), max_df=0.05)),
             ("clf", SVC(kernel='sigmoid', C=500, gamma='scale', probability=True, class_weight='balanced'))
         ])
         return pipe_line
