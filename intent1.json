@@ -1,0 +1,777 @@
+[
+  {
+    "tag": "xin_chao",
+    "patterns": [
+      "xin chào",
+      "chào",
+      "hi",
+      "hello",
+      "chào bạn",
+      "cậu tên gì",
+      "tên gì",
+      "your name",
+      "bạn tên gì"
+    ],
+    "response": [
+      "Hello nhá. Mình là DTUBot, mình có thể giúp gì cho bạn?",
+      "Chào bạn, mình là DTUBot. Mình có thể giúp gì cho bạn?",
+      "Mình tên DTUBot. Chatbot hỗ trợ các bạn trong việc sử dụng các phần mềm để học. Bạn đang có vấn đề gì vậy?"
+    ]
+  },
+  {
+    "tag": "loi_khong_nghe_thay_tieng_nguoi_khac_trong_zoom",
+    "patterns": [
+      "Vì sao không nghe được người khác nói trong zoom",
+      " Người khác nói chuyện trong zoom nhưng mình không nghe được",
+      " Người khác đang nói chuyện trong zoom nhưng mình không nghe được",
+      " Không thể nghe người khác nói chuyện trong zoom",
+      " Không nghe được người khác đang nói chuyện trong zoom",
+      " Người ta nói mình không nghe được",
+      " Không nghe được tiếng của người khác trong zoom",
+      " Người khác đang phát tiếng nhưng không nghe được",
+      "người khác nói không nghe",
+      "không nghe người khác nói",
+      " không nghe người khác nói gì",
+      " họ nói mình không nghe được",
+      " người khác nói không nghe được",
+      " lỗi người khác nói không nghe",
+      " không nghe được người khác nói gì",
+      " người khác nói không nghe được",
+      " người khác nói nhưng không nghe thấy gì",
+      " thầy cô nói nhưng không nghe thấy gì",
+      " bạn nói nhưng không nghe được",
+      " không nghe thấy thầy cô đang giảng bài",
+      " thầy cô đang giảng bài nhưng không nghe được",
+      " không nghe thấy tiếng người khác thuyết trình",
+      " người khác nói nhưng không nghe thấy tiếng",
+      " không nghe được tiếng của người khác đang nói"
+    ],
+    "response": "Kiểm tra lại âm thanh bằng cách vào setting -> audio -> test speaker -> nếu nghe thấy tiếng thì ok, trường hợp không nghe thấy tiếng thì chọn lại đầu ra âm thanh trong mục thả xuống bên cạnh, trường hợp vẫn không được nữa thì thử thoát và tắt zoom sau đó khởi động lại"
+  },
+  {
+    "tag": "loi_noi_nguoi_khac_khong_nghe_tieng_trong_zoom",
+    "patterns": [
+      "Mình nói nhưng người khác không nghe thấy",
+      " Người khác không nghe được tiếng mình nói",
+      " Mình nói nhưng người khác không nghe được",
+      " Nói nhưng mic không thu được",
+      " Mic không thu được âm thanh khi mình nói chuyện",
+      " Nói trong zoom nhưng không ai nghe được cả",
+      " Lỗi nói người khác không nghe được trong zoom",
+      " Nói nhưng không ai nghe thấy cả",
+      " Không ai nghe được mình nói mặc dù mình đang nói",
+      " Nói nhưng mọi người không nghe được",
+      "mình nói nhưng người khác không nghe",
+      " trình bày nhưng không ai nghe được",
+      " người khác không nghe được mình trình bày",
+      " mình đang nói nhưng người khác không nghe được",
+      " không ai nghe được tiếng mình nói",
+      " mình nói không có tiếng",
+      " người khác không thấy tiếng mình nói",
+      " nói nhưng không ai nghe được",
+      "nói không ai nghe"
+    ],
+    "response": "Kiểm tra lại mic bằng cách vào setting -> audio -> test mic -> nếu thấy nhận tín hiệu thì ok, trường hợp không được thì chọn lại đầu vào âm thanh trong mục thả xuống bên cạnh"
+  },
+  {
+    "tag": "truong_hop_co_tieng_vang_trong_khi_noi",
+    "patterns": [
+      "Vì sao khi nói lại có tiếng vang",
+      " Làm sao để hết tiếng vang khi nói",
+      " Nói thì bị tiếng vang",
+      " Có tiếng vang trong khi đang nói",
+      " Đang nói thì bị có tiếng vang",
+      " Sửa lỗi có tiếng vang khi đang nói",
+      " Mỗi lần nói thì có tiếng vang",
+      " Có tiếng vang mỗi khi nói",
+      " Khắc phục có tiếng vang khi đang nói",
+      " Giải quyết lỗi có tiếng vang khi đang nói"
+    ],
+    "response": "Kiểm tra lại âm thanh bằng cách vào setting -> audio -> điều chỉnh lại độ nhạy mic"
+  },
+  {
+    "tag": "loi_khong_hien_thi_camera_sau_khi_bat",
+    "patterns": [
+      "Vì sao camera không hiển thị sau khi bật",
+      " Camera không hiển thị mặc dù đã bật",
+      " Sửa lỗi camera không hiển thị dù đã bật",
+      " Đã bật camera nhưng camera lại không hiển thị",
+      " Camera không hiển thị sau khi bật",
+      " Không hiển thị camera sau khi bật",
+      " Khắc phục lỗi camera không hiển thị sau khi bật",
+      " Camera bị lỗi hiển thị sau khi bật",
+      " Lỗi hiển thị camera sau khi bật"
+    ],
+    "response": "Vào mục setting -> video -> tại mục camera xem lại chọn đúng camera của máy tín hay chưa"
+  },
+  {
+    "tag": "loi_khong_hien_thi_camera_va_khong_nghe_duoc_am_thanh_khi_tham_gia_zoom_tren_dien_thoai",
+    "patterns": [
+      "Không hiển thị camera và không nghe được âm thanh trên điện thoại",
+      " Camera không hiển thị và không có âm thanh khi dùng trên điện thoại",
+      " Âm thanh không phát trên điện thoại",
+      " Camera không hiển thị trên điện thoại",
+      " Không hiển thị camera trên điện thoại",
+      " Camera và âm thanh bị lỗi trên điện thoại",
+      " Không nghe được âm thanh trên điện thoại",
+      " Lỗi không hiển thị camera và không nghe được âm thanh khi tham gia zoom trên điện thoại",
+      " Tham gia zoom trên điện thoại bị lỗi camera không hiển thị và không nghe được âm thanh",
+      " Camera không hiển thị khi tham gia zoom trên điện thoại",
+      " Không nghe được âm thanh khi tham gia zoom trên điện thoại"
+    ],
+    "response": "1. Kiểm tra xem máy tính có tắt chức năng truy câp Camera hay Mic (hoặc chưa Join Audio)\n3.Xem lại đã cấp quyền cho ứng dụng zoom chưa, vào cài đặt điện thoại -> ứng dụng zoom -> các quyền cho phép -> cho phép quyền âm thanh và video"
+  },
+  {
+    "tag": "loi_bi_vang_khoi_phong_zoom_",
+    "patterns": [
+      "Đang học thì bị văng ra khỏi phòng zoom",
+      " Đang học thì bị out ra khỏi phòng zoom",
+      " Bị out ra khỏi phòng khi đang học",
+      " Bị văng ra khỏi phòng khi đang học",
+      " Tự nhiện bị văng khi đang ở trong phòng học",
+      " bất ngờ bị văng khi đang ở trong phòng học",
+      " Tự out khi đang học",
+      " Tự văng khi đang học",
+      " Lỗi tự văng ra ngoài khi dang học",
+      " Lỗi tự văng ra khỏi phòng zoom",
+      " Lỗi tự thoát ra ngoài khi đang ở trong phòng zoom",
+      " Tự thoát ra ngoài khi đang ở trong phòng zoom",
+      " Thoát bất ngờ khi đang học",
+      " Đang học thì tự thoát ra ngoài",
+      " Bất ngờ tự thoát ra ngoài khi đang ở trong phòng zoom",
+      " đang học thì bị out",
+      " đang học thì tự thoát"
+    ],
+    "response": "Xem thử có lỗi về link zoom không -> nếu vào bằng link zoom không được thì thử vào bằng id và passs\nTrường hợp vào được nhưng một lúc bị văng thì xem thử thiết bị có vấn đề hay không"
+  },
+  {
+    "tag": "loi_khong_thay_link_zoom_trong_online_class",
+    "patterns": [
+      "Không tìm thấy link trong online class",
+      " Không có link trong online class",
+      " Online class không có link",
+      " Online class không hiển thị link lớp học",
+      " Không có link zoom trong online class",
+      " Sakai không có link zoom",
+      " Link zoom không hiển thị trong sakai",
+      " Elearning không có link zoom",
+      " Không tìm thấy link zoom trong online class",
+      " Không có link zoom trong online class",
+      " Link zoom không hiển thị trong online class",
+      " Online class không có link zoom",
+      " Không có link lớp học trong online class",
+      " Online class không có link lớp học",
+      " Không tìm thấy link lớp học trong online class"
+    ],
+    "response": "Liên hệ giáo viên hoặc bạn bè cùng lớp để lấy link"
+  },
+  {
+    "tag": "loi_khong_vao_duoc_zoom_(id_invalid)",
+    "patterns": [
+      "Link zoom bị lỗi không vào được",
+      " Link zoom bị lỗi id invalid",
+      " Không vào lớp được bằng link zoom",
+      " Link zoom không vào lớp được",
+      " Bị lỗi id invalid link zoom",
+      " Bấm vào link zoom nhưng bị lỗi không vào được",
+      " Id invalid link zoom",
+      " Không vào lớp bằng link zoom được",
+      " lỗi link zoom không vào lớp được",
+      " link zoom bị lỗi id invalid",
+      " vào lớp bằng link zoom bị lỗi id invalid",
+      " bấm join trong online class bị lỗi không vào lớp được",
+      " vào lớp bằng cách bấm join trong online class nhưng bị lỗi"
+    ],
+    "response": "1. Nếu bạn vào bằng link được chia sẻ từ người khác, thì hãy vào lại bằng link trên Sakai \n2. Đổi thiết bị khác\n3. Liên hệ với giáo viên để thông báo về vấn đề."
+  },
+  {
+    "tag": "loi_khong_thay_bai_tap/test_o_assignment",
+    "patterns": [
+      "Không thấy bài tập trong assignment",
+      " Không thấy bài tập",
+      " test thầy cô giao trong mục bài tập",
+      " Không có bài tập nào hiển thị trong mục assignment",
+      " Không có bài tập nào hiển thị trong mục bài tập",
+      " Mục assignment không hiển thị bài tập",
+      " Mục assignment không hiển thị test",
+      " Mục bài tập không hiển thị test",
+      " Mục bài tập không hiển thị bài tập"
+    ],
+    "response": " Đợi khoảng 5' rồi load lại trang, nếu vẫn không có thì liên hệ với giáo viên."
+  },
+  {
+    "tag": "loi_bi_thoat_moi_khi_save_bai",
+    "patterns": [
+      "save bài thì bị lỗi",
+      " lưu bài thì bị lỗi",
+      " save bài thì bị out ra ngoài",
+      " lưu bài thì bị out ra ngoài",
+      " bị lỗi khi save bài trong test quiz",
+      " bị lỗi khi lưu bài trong test quiz",
+      " đang làm bình thường tới lúc lưu bài thì bị lỗi",
+      " đang làm bình thường tới lúc save bài thì bị lỗi",
+      "lưu bài làm thì tự thoát",
+      "lưu bài thì tự thoát",
+      "tự thoát khi lưu bài",
+      "thoát lưu bài"
+    ],
+    "response": "Vào làm lại và chú ý trong khi nên note đáp án lại ra giấy hoặc file text,…"
+  },
+  {
+    "tag": "loi_bi_thoat_khi_bam_next_nhanh",
+    "patterns": [
+      "bấm next thì bị lỗi",
+      " bấm nút tiếp theo thì bị lỗi",
+      " bấm next thì bị out ra ngoài",
+      " bấm nút tiếp theo hay quay lại thì bị lỗi",
+      " bấm next hoặc previous thì bị lỗi",
+      " Bị lỗi khi bấm next",
+      " Bị lỗi khi bấm previous",
+      " Bị lỗi khi bấm nút tiếp theo",
+      " Bị lỗi khi bấm nút quay lại",
+      "bấm nút tiếp theo khi kiểm tra thì tự thoát"
+    ],
+    "response": "1. làm lại và chú ý trong khi nên note đáp án lại ra giấy hoặc file text,…\n2. Sử dụng thanh Table of contents gần thanh thời gian để xem danh sách các câu hỏi\n3. NHỚ BẤM SAVE THƯỜNG XUYÊN TRONG LÚC LÀM BÀI"
+  },
+  {
+    "tag": "loi_submit_ma_thay_co_khong_nhan_duoc_bai",
+    "patterns": [
+      "Đã submit bài nhưng thầy cô không nhận được",
+      " Thầy cô không nhận được bài dù đã submit",
+      " Giảng viên không thấy bài dù đã nhấn submit",
+      " Đã gửi bài nhưng giáo viên không nhận được",
+      " Đã gửi bài nhưng giảng viên không nhận được",
+      " Đã gửi bài nhưng thầy cô không nhận được",
+      " Giáo viên không nhận được bài dù đã submit",
+      "nộp bài rồi mà giảng viên không nhận được"
+    ],
+    "response": " Chắc chắn bạn đã làm đủ bước khi submit bài; nếu không có bài báo ngay với giảng viên để xử lí"
+  },
+  {
+    "tag": "tai_sao_share_man_hinh_ma_khong_nghe_tieng",
+    "patterns": [
+      "Share màn hình nhưng không nghe thấy tiếng",
+      " Người khác không thấy tiếng share màn hình",
+      " Share màn hình được nhưng không share được tiếng",
+      " Không nghe tiếng share màn hình",
+      " Chia sẻ màn hình nhưng người khác không nghe được tiếng",
+      " không share được tiếng khi share màn hình",
+      " Share màn hình nhưng người khác không nghe thấy tiếng",
+      " không nghe được tiếng share màn hình"
+    ],
+    "response": "Kiểm tra xem bạn đã bấm share sound trong phần More chưa"
+  },
+  {
+    "tag": "lam_sao_vao_breakroom_khi_chia_phong_o_zoom",
+    "patterns": [
+      "Cách để vào breakroom",
+      " Làm sao để vào breakroom",
+      " Cách để vào break room",
+      " Làm sao để vào break room",
+      " Cách vào lại breakroom khi lỡ thoát ra",
+      " Cách vào lại break room khi lỡ thoát ra",
+      " Vào breakroom như thế nào",
+      " Vào break room như thế nào",
+      " Vô breakroom như thế nào",
+      " Vô break room như thế nào",
+      "làm sao để tham gia breakroom",
+      "cách tham gia breakroom"
+    ],
+    "response": "Bấm vào More sau đó chọn Join Breakout Room"
+  },
+  {
+    "tag": "dung_camera_khac_de_thay_the_camera_chinh_duoc_khong",
+    "patterns": [
+      "có dùng camera khác thay thế camera chính được không",
+      " có cách nào dùng camera khác thay thế camera chính được không",
+      " có phần mềm nào dùng để thay thế camera máy tính được không",
+      " có cách nào dùng camera khác thay thế camera máy tính được không",
+      " Dùng phần mềm khác để thay thế camera chính được không",
+      " Cách dùng điện thoại thay camera máy tính",
+      " cách thay thế camera chính bằng camera khác",
+      " thay đổi camera chính bằng camera khác"
+    ],
+    "response": "Có.\nBạn có thể dùng ứng dụng bên thứ 3 như DroidCamApp,.. để dùng camera điện thoại thay thế camera máy tính. "
+  },
+  {
+    "tag": "cach_tao_tai_khoan_zoom_bang_mail_dtu",
+    "patterns": [
+      "cách tạo tài khoản zoom bằng mail mydtu",
+      " cách tạo tài khoản zoom bằng mail dtu",
+      " tạo tài khoản zoom bằng mail dtu",
+      " cách tạo tài khoản zoom bằng mail dtu",
+      " tạo tài khoản zoom mail dtu",
+      " tạo tài khoản zoom bằng mail trường",
+      " tạo tài khoản zoom mail trường",
+      " cách tạo tài khoản zoom bằng mail trường",
+      "làm thế nào để tạo tài khoản zoom bằng mail trường",
+      "cách đăng ký tài khoản zoom bằng mail trường",
+      "cách đăng ký tài khoản zoom bằng mail dtu",
+      "làm sao để đăng ký tài khoản zoom bằng mail trường",
+      "đăng ký tài khoản zoom bằng mail trường như thế nào"
+    ],
+    "response": "1. Đăng nhập vào tài khoản myDTu\n2. Chọn Học tập\n3. Chọn HƯỚNG DẪN SỬ DỤNG ZOOM - cho Sinh viên, có file pdf đầy đủ các bước bạn cần thực hiện"
+  },
+  {
+    "tag": "cach_sap_xep_cac_mon_dang_hoc_len_thanh_taskbar",
+    "patterns": [
+      "cách sắp xếp các môn đang học trên taskbar",
+      " thay vị trí các môn đang học trên thanh taskbar",
+      " sắp xếp lại vị trí các môn trên thanh taskbar",
+      " đổi chỗ các môn đang học trên thanh taskbar",
+      " đổi vị trí các môn học trên thanh taskbar",
+      " thay đổi vị trí các môn trên thanh taskbar",
+      " tùy chỉnh vị trí các môn trên thanh taskbar"
+    ],
+    "response": "1. Bấm vào biểu tượng View All Sites\n2. Chọn Organize Favourite và kéo thả thứ tự các môn học theo mong muốn của bạn.\n3. Reload lại trang"
+  },
+  {
+    "tag": "mydtu_se_bao_tri_trong_thoi_gian_nao",
+    "patterns": [
+      "mydtu bảo trì vào thời gian nào",
+      " thời gian mydtu bả trì",
+      " mydtu bảo trì lúc mấy giờ",
+      " mydtu bảo trì lúc nào",
+      " khoảng thời gian mydtu bảo trì",
+      " giờ mydtu bảo trì",
+      " thời gian mydtu bảo trì"
+    ],
+    "response": "1. Bảo trì từ 23:00 đến 00:00 mỗi ngày\n2. Nếu trong thời gian đang thi online, bạn sẽ không vào được sau 23:00. "
+  },
+  {
+    "tag": "khi_tre_han_nop_assignment_thi_lam_sao",
+    "patterns": [
+      "Làm gì khi trễ hạn nộp bài tập",
+      " Làm gì khi trễ hạn nộp assignment",
+      " trễ hạn nộp bài tập thì làm sao",
+      " trễ hạn nộp assignment thì làm sao",
+      " trễ hạn nộp bài tập thì xử lý như nào",
+      " trễ hạn nộp assignment  thì xử lý như nào"
+    ],
+    "response": "Trường hơp này bạn vui lòng liên hệ giáo viên để giải quyết .Đồng thời, bạn phải cho rút kinh nghiệm cho lần sau nhé, luôn kiểm tra kĩ hạn cuối mỗi bài assignment để lên kế hoạch hợp lí."
+  },
+  {
+    "tag": "lam_sao_khi_quen_mat_khau_mydtu",
+    "patterns": [
+      "cách lấy lại mật khẩu mydtu",
+      " quên mật khẩu mydtu",
+      " lấy lại mật khẩu mydtu",
+      " lấy lại password mydtu",
+      " cách lấy lại password mydtu",
+      " quên password mydtu",
+      " làm sao khi quên mật khẩu mydtu",
+      " làm sao khi quên password mydtu"
+    ],
+    "response": "TH1: Nếu bạn đã nhập mail cá nhân trong thông tin cá nhân ở myDTU, thì chọn quên mật khẩu trên trang myDTU để cài lại mật khẩu. Sau đó mật khẩu mới sẽ được gửi lại qua email mà bạn đã cung cấp.\nTH2: Nếu bạn chưa nhập mail cá nhân, bạn sẽ phải lên trung tâm CSE ở tầng 7, cơ sở 03 Quang Trung (yêu cầu thẻ sinh viên). Hoặc liên hệ : \nThầy Nguyễn Trọng Thành - Giám đốc Trung tâm CSE \nSố điện thoại: 0983.955591\n"
+  },
+  {
+    "tag": "khi_mydtu_bao_tri_thi_co_vao_sakai_duoc_khong",
+    "patterns": [
+      "mydtu bảo trì thì có vào được sakai không",
+      " mydtu bảo trì thì có vào được elearning không",
+      " có vào được sakai khi mydtu bảo trì không",
+      " có vào được elearning khi mydtu bảo trì không",
+      " làm sao vào được elearning khi mydtu bảo trì",
+      " làm sao vào được sakai khi mydtu bảo trì",
+      " mydtu bảo trì sai có vào được không",
+      " mydtu bảo trì elearnig có vào được không",
+      "vào sakai lúc mydtu bảo trì",
+      "vào elearning lúc mydtu bảo trì"
+    ],
+    "response": "Không. Bạn vui lòng vào trước hoặc sau thời gian bảo trì nhé. (Bảo trì từ 23:00 đến 00:00 mỗi ngày)"
+  },
+  {
+    "tag": "neu_vao_lop_hoc_online_khong_bang_gmail_cua_dtu_thi_se_the_nao",
+    "patterns": [
+      "không vào lớp bằng tài khoản zoom tạo từ mail trường thì như thế nào",
+      " không vào lớp bằng tài khoản zoom tạo từ gmail trường thì như thế nào",
+      " không vào lớp bằng tài khoản zoom tạo từ gmail trường thì bị gì",
+      " không vào lớp bằng tài khoản zoom tạo từ mail trường thì bị gì",
+      " không dùng tài khoản zoom tạo từ mai trường để vào lớp thì có sao không",
+      " không dùng tài khoản zoom tạo từ gmail trường để vào lớp thì có sao không",
+      " dùng tài khoản zoom không tạo từ mail trường thì sẽ như thế nào",
+      " dùng tài khoản zoom không tạo từ gmail trường thì sẽ như thế nào",
+      " vào lớp bằng tài khoản zoom không tạo từ mail trường thì sẽ như thế nào",
+      " vào lớp bằng tài khoản zoom không tạo từ gmail trường thì sẽ như thế nào"
+    ],
+    "response": "Bạn sẽ phải ở phòng chờ và đợi sự cho phép của giáo viên mới được vào lớp."
+  },
+  {
+    "tag": "tai_sao_khi_vao_zoom_hoc_online_lai_o_phong_cho",
+    "patterns": [
+      "vào lớp học thì phải ở phòng chờ",
+      " khi vô lớp thì phải chờ ở phòng chờ",
+      " không được vô thẳng lớp mà phải chờ ở phòng chờ",
+      " phải chờ ở phòng chờ mà không được vào thẳng lớp",
+      " vào lớp phải chờ ở waiting room",
+      " không vào thẳng được lớp mà phải đợi ở waiting room"
+    ],
+    "response": "Vì bạn không dùng tài khoản zoom được đăng kí bằng email của trường."
+  },
+  {
+    "tag": "khi_bi_kick_ra_khoi_zoom_thi_co_vao_lai_duoc_khong",
+    "patterns": [
+      "bị kick ra ngoài thì có vào lại được không",
+      " bị đuổi ra khỏi lớp thì có vào lại được không",
+      " có vào lại lớp khi bị kick không",
+      " có vào lại lớp khi bị đuổi ra được không",
+      " có vào lại lớp bị kick ",
+      " có vào lại lớp bị đuổi",
+      "cách vào lại lớp khi bị đuổi"
+    ],
+    "response": "Không vào lại được nhé. Nếu có sai sót thì bạn vui lòng liên hệ giáo viên"
+  },
+  {
+    "tag": "khi_thay_co_tao_bai_tap_thi_co_duoc_thong_bao_khong",
+    "patterns": [
+      "có được thông báo khi thầy cô giao bài tập không",
+      " có được thông báo khi thầy cô giao assignment không",
+      " thầy cô tạo bài tập thì có thông báo không",
+      " thầy cô tạo assignment thì có thông báo không",
+      " thầy cô tạo assignment thông báo",
+      " thầy cô tạo bài tập thông báo",
+      " thầy cô giao bài tập thông báo",
+      " thầy cô giao assignment thông báo"
+    ],
+    "response": "Được thông báo ở phần Academic Alerts"
+  },
+  {
+    "tag": "cach_chuyen_huong_email_dtu_sang_email_thuong",
+    "patterns": [
+      "cách chuyển hướng mail dtu sang sang mail thường",
+      " chuyển hướng mail dtu sang mai thường",
+      " làm sao để chuyển hướng mail dtu sang mail của mình",
+      " làm sao để chuyển hướng mail dtu sang mail thường",
+      " làm sao để chuyển hướng mail dtu sang mail khác",
+      " chuyển hướng mail dtu mail thường",
+      " chuyển hướng mail dtu mail của mình",
+      " chuyển hướng mail dtu mail khác"
+    ],
+    "response": "Bạn vui lòng làm theo hướng dẫn ở đây. \nhttps://www.thegioididong.com/game-app/cach-forward-mail-chuyen-tiep-mail-da-nhan-sang-tai-khoan-1270930"
+  },
+  {
+    "tag": "cach_cap_nhat_thong_tin_trong_mydtu",
+    "patterns": [
+      "cách cập nhật thông tin trên mydtu",
+      " làm sao để cập nhật thông tin trên mydtu",
+      " thay đổi thông tin trên mydtu",
+      " cập nhật thông tin mydtu",
+      " thay đổi thông tin mydtu",
+      " sửa đổi thông tin mydtu"
+    ],
+    "response": "1. Đăng nhập vào tài khoản myDTu\n2. Chọn Thông tin cá nhân -> Thông tin cá nhân\n3. Chọn Cập nhật, sau đó điền đầy đủ thông tin\n4. Nhập mã xác nhận -> Bấm nút Cập nhật để lưu"
+  },
+  {
+    "tag": "cach_doi_pass_email_mail_dtu",
+    "patterns": [
+      "đổi password mail dtu",
+      " đổi mật khẩu mail dtu",
+      " thay đổi mật khẩu mail trường",
+      " thay đổi password mail trường",
+      " thay đổi mail dtu",
+      " cách đổi mật khẩu mail dtu",
+      " cách đổi mật khẩu mail trường",
+      "đổi password mail trường",
+      "đổi mật khẩu mail trường"
+    ],
+    "response": "1. Đăng nhập vào tài khoản myDTu\n2. Chọn Thông tin cá nhân -> Mật khẩu\n3. Điền mật khẩu cũ, mật khẩu mới\n4. Bấm nút Cập nhật để lưu"
+  },
+  {
+    "tag": "trang_dang_ki_tin_chi_khong_load_duoc",
+    "patterns": [
+      "trang đăng kí tín chỉ không load được",
+      " trang đăng kí tín chỉ không tải được",
+      " không vào trang đăng kí tín chỉ được",
+      " trang đăng kí tín chỉ bị lỗi",
+      " không vào được trang đăng kí tín chỉ",
+      " trang đăng kí tín chỉ lỗi",
+      " lỗi không vào được trang đăng kí tín chỉ"
+    ],
+    "response": "Đăng nhập bằng thiết bị khác hoặc trình duyệt khác.\nNếu không được, baj hãy nhờ bạn bè đăng kí giúp hoặc bạn vui lòng sắp xếp lại lịch học theo các lớp còn lại, Bạn vui lòng đợi trong vài phút, nếu không được thì reload trang và đăng kí lại. "
+  },
+  {
+    "tag": "dang_ki_duoc_tin_chi_nhung_khong_thay_lich_hoc",
+    "patterns": [
+      "đăng kí được tín chỉ nhưng không thấy lịch học",
+      " không thấy lịch học dù đã đăng kí tín chỉ",
+      " đã đăng kí được môn nhưng không thấy lịch học",
+      " đăng kí tín chỉ thành công nhưng không thấy lịch học",
+      " không thấy lịch học dù đăng kí tín chỉ thành công",
+      " đăng kí thành công tín chỉ không thấy lịch học"
+    ],
+    "response": "Bạn vui lòng đợi trong vòng 1 ngày. Nếu vẫn không có lịch học, vui lòng liên hệ trung tâm CSE ở tầng 7, cơ sở 03 Quang Trung. Hoặc liên hệ : \nThầy Nguyễn Trọng Thành - Giám đốc Trung tâm CSE \nSố điện thoại: 0983.955591"
+  },
+  {
+    "tag": "cach_huy_mon",
+    "patterns": [
+      "cách hủy môn",
+      " làm sao để hủy môn",
+      " hủy môn như thế nào",
+      " hủy môn học",
+      " hủy môn bằng cách nào",
+      "hủy môn",
+      "cách hủy môn học",
+      "hủy môn học như thế nào",
+      "không muốn học một môn nữa thì hủy như thế nào",
+      "cách hủy môn trên mydtu",
+      "hủy môn học trên mydtu",
+      "muốn hủy môn thì làm gì"
+    ],
+    "response": "1. Đăng nhập MyDTU\n2. Chọn Học tập -> Đăng kí tín chỉ -> Chọn Năm học và Học kì\n3. Bấm nút xoá bên cạnh môn bạn muốn huỷ\nCHÚ Y: Bạn chỉ có thể huỷ môn trong thời hạn cho phép"
+  },
+  {
+    "tag": "khong_vao_duoc_mydtu",
+    "patterns": [
+      "vì sao không vào được mydtu",
+      " không vào được mydtu",
+      " mydtu không vào được",
+      " mydtu bị lỗi không vào được",
+      "không truy cập được mydtu",
+      "truy cập mydtu không được",
+      "lỗi truy cập mydtu",
+      "mydru bị lỗi truy cập"
+    ],
+    "response": "Kiểm tra xem bạn có vào thời điểm MyDTU đang bảo trì hay không hoặc kiểm tra kết nối mạng"
+  },
+  {
+    "tag": "khong_thay_diem_trong_bang_diem",
+    "patterns": [
+      "vì sao không thấy điểm trong bảng điểm",
+      " bảng điểm không có điểm",
+      " vì sao bảng điểm không có điểm",
+      " không thấy điểm trong bảng điểm",
+      " chưa có điểm trong bảng điểm",
+      " bảng điểm không hiện điểm"
+    ],
+    "response": "Có thể giảng viên chưa nhập điểm trên hệ thống nên bạn vui lòng liên hệ với giảng viên nhé"
+  },
+  {
+    "tag": "da_doi_lop_tren_he_thong_nhung_khong_thay_lich",
+    "patterns": [
+      "đã đổi lớp trên hệ thống nhưng không thấy lịch",
+      " đổi lớp trên hệ thống nhưng không có lịch học",
+      " không có lịch học đổi lớp trên hệ thống",
+      " không hiện lịch học đổi lớp trên hệ thống",
+      "đổi lớp nhưng không thấy lịch",
+      "không thấy lịch khi đã đổi lớp"
+    ],
+    "response": "Bạn vui lòng đợi trong vòng 1 ngày. Nếu vẫn không có lịch học, vui lòng liên hệ trung tâm CSE ở tầng 7, cơ sở 03 Quang Trung. Hoặc liên hệ : \nThầy Nguyễn Trọng Thành - Giám đốc Trung tâm CSE \nSố điện thoại: 0983.955591"
+  },
+  {
+    "tag": "nop_hoc_phi_qua_ngan_hang_nhung_chua_thay_hoa_don_trong_mydtu",
+    "patterns": [
+      "nộp học phí qua ngân hàng nhưng chưa thấy hóa đơn",
+      " không thấy hóa đơn nộp học phí qua ngân hàng",
+      " chưa thấy hóa đơn nộp học phí qua ngân hàng",
+      " nộp học phí qua ngân hàng nhưng không thấy hóa đơn",
+      " qua ngân hàng không thấy hóa đơn",
+      "chuyển khoản qua ngân hàng nhưng không thấy hóa đơn",
+      "chưa thấy hóa đơn học phí dù đã chuyển khoản qua ngân hàng"
+    ],
+    "response": "Bạn vui lòng đợi khoảng 1 tuần sau đó kiểm tra tại mục Hoá đơn học phí. Nếu vẫn chưa có, vui lòng lên 137 Nguyễn Văn Linh để giải quyết."
+  },
+  {
+    "tag": "khong_dang_ki_duoc_tin_chi",
+    "patterns": [
+      "không đăng kí được tín chỉ",
+      " đăng kí tín chỉ không được",
+      " đăng kí tín chỉ bị lỗi",
+      " lỗi đăng kí tín chỉ",
+      " bị lỗi không đăng kí được tín chỉ"
+    ],
+    "response": "Kiểm tra bạn đã đến hạn đăng kí chưa, nếu đã tới hạn mà bạn vẫn chưa đăng kí được thì hãy liên hệ với Khoa của bạn để được giải quyết."
+  },
+  {
+    "tag": "bam_next_bi_lap_lai_cau_cu,_reload_van_khong_duoc",
+    "patterns": [
+      "bấm next bị lặp lại câu cũ reload vẫn không được",
+      " bấm nút tiếp theo bị lặp lại câu cũ tải lại trang vẫn không được",
+      " bị lỗi bấm next không sang câu mới reload lại trang vẫn không được",
+      " bị lỗi bấm next không sang câu mới tải lại trang vẫn không được",
+      " bấm next không qua câu tiếp theo tải lại trang vẫn lỗi"
+    ],
+    "response": "1. Thử sử dụng Table of Contents để chuyển câu\n2. Nếu không được, vui lòng báo giảng viên"
+  },
+  {
+    "tag": "khong_vao_duoc_test/quizz",
+    "patterns": [
+      "không vào được mục test quiz",
+      " mục test quiz không vào được",
+      " không truy cập được mục test quiz",
+      " mục test quiz không truy cập được",
+      " test quiz bị lỗi",
+      " test quiz bị lỗi không vào được",
+      " không mở test quiz được",
+      " test quiz không mở được"
+    ],
+    "response": "1. Kiểm tra lại kết nối mạng của bạn\n2. Nếu không được, vui lòng báo giảng viên"
+  },
+  {
+    "tag": "lam_bai_het_gio_he_thong_tu_nop_bai_nhung_khong_thay_bai",
+    "patterns": [
+      "làm bài hết giờ hệ thống tự nộp nhưng không thấy bài",
+      " hệ thống tự nộp nhưng không thấy bài",
+      " không thấy bài khi hệ thống tự nộp khi hết giờ",
+      " thầy cô không nhận được bài khi hệ thống tự nộp lúc hết giờ"
+    ],
+    "response": "Vui lòng đợi khoảng 1'. Nếu vẫn không thấy bài thì liên hệ giáo viên đễ hỗ trợ.\nChú ý: Hãy cố gắng submit trước hạn ít nhất 30s để tránh gặp trường hợp này."
+  },
+  {
+    "tag": "khi_het_gio_he_thong_tu_nop_bai_thi_nhung_cau_lam_nhung_chua_bam_save_co_mat_khong",
+    "patterns": [
+      "hết giờ làm bài thì có mất câu trả lời chưa save không",
+      " hết giờ làm bài thì có mất câu trả lời chưa lưu không",
+      " có mất những câu chưa save khi hết giờ làm bài không",
+      " có mất những câu chưa lưu khi hết giờ làm bài không",
+      " mất câu trả lời chưa save khi hết giờ",
+      " mất câu trả lời chưa lưu khi hết giờ"
+    ],
+    "response": "Những câu chưa bấm save sẽ mất nhé. \nChú ý: Hãy bấm save 5 câu một lần để tránh trường hợp này\nHãy cố gắng submit trước hạn ít nhất 30s để tránh gặp trường hợp này."
+  },
+  {
+    "tag": "bi_out_ra_ngoai_xong_vao_lai_thay_mat_het_cac_cau_hoi_da_tra_loi",
+    "patterns": [
+      "bị out ra ngoài xong vào lại thì mất các câu trả lời",
+      " bị văng ra ngoài xong vào lại thì mất các câu trả lời",
+      " mất các câu trả lời khi bị out ra ngoài",
+      " lỗi khi làm bài thoát ra ngoài mất hết các câu trả lời",
+      " mất hết các câu trả lời lúc vào lại sau khi bị văng ra ngoài"
+    ],
+    "response": "Làm lại và chú ý trong khi làm nên note đáp án lại ra giấy hoặc file text,…\n"
+  },
+  {
+    "tag": "neu_den_ngay_thi_ma_chua_nop_tien_hoc_thi_sao",
+    "patterns": [
+      "nếu đến lúc thi chưa nộp tiền học thì sao",
+      " chưa nộp tiền học lúc thi thì sao",
+      " tới ngày thi chưa nộp tiền học có bị gì không",
+      " ngày thi chưa nộp tiền học có vấn đề gì không",
+      " có bị phạt ngày thi chưa nộp tiền học",
+      " chưa nộp tiền học thì có được thi không",
+      " không nộp tiền thì có được thi không",
+      " có được thi khi chưa nộp tiền"
+    ],
+    "response": "Bạn sẽ không được tham gia thi cuối kì, nên vui lòng hãy hoàn thành học phí tối thiểu 3 ngày trước khi thi môn đầu tiên."
+  },
+  {
+    "tag": "co_nhung_luu_y_gi_khi_thi_online_",
+    "patterns": [
+      "Những lưu ý khi thi online",
+      " thi online cần lưu ý gì",
+      " các vấn đề cần lưu ý khi thi online",
+      " lưu ý khi thi online",
+      " những lưu ý khi thi online",
+      "lời khuyên khi thi online",
+      "vấn đề cần lưu ý khi th online"
+    ],
+    "response": "1. Kiểm tra kết nối và chuẩn bị 4g để dự phòng \n2. Nhớ ghi lại đáp án các câu trả lời và bấm save thường xuyên\n3. Chụp lại bài làm để chắc chắn bạn đã tham gia thi nếu bài thi gặp vấn đề\n4. Hãy cố gắng submit trước hạn ít nhất 30s"
+  },
+  {
+    "tag": "khong_biet_cai_phan_mem_zoom_tren_may_tinh",
+    "patterns": [
+      "cách cài đặt zoom trên máy tính",
+      " cài đặt zoom trên máy tính",
+      " tải zoom trên máy tính",
+      " những bước cài đặt zoom trên máy tính",
+      " cài zoom trên máy tính",
+      "download zoom trên máy tính",
+      "tải và cài đặt zoom trên máy tính",
+      "tải và cài đặt zoom trên laptop"
+    ],
+    "response": "Click nút Online Classes > hệ thống sẽ tự download (nếu không click nút download client zoom) > Setup"
+  },
+  {
+    "tag": "khong_dang_nhap_duoc_vao_zoom",
+    "patterns": [
+      "không đăng nhập được vào zoom",
+      " zoom không đăng nhập được",
+      " đăng nhập vào zoom bị lỗi",
+      " lỗi đăng nhập vào zoom",
+      " lỗi không đăng nhập được vào zoom",
+      "vì sao không đăng nhập được vào zoom",
+      "zoom không đăng nhập được",
+      "zoom đăng nhập bị lỗi",
+      "zoom bị lỗi không đăng nhập được",
+      "zoom bị lỗi đăng nhập"
+    ],
+    "response": "-Kiểm tra xem máy tính có bị firewall/proxy chặn không\n-Kiểm tra phần mềm diệt virus chặn kết nối\n-Tạo tài khoản mới trên PC https://quantrimang.com/huong-dan-tao-user-moi-tren-windows-10-121226"
+  },
+  {
+    "tag": "co_cai_mat_khau_cho_mail_dtu_duoc_khong?",
+    "patterns": [
+      "cách cài mật khẩu mail dtu",
+      " thay đổi mật khẩu mail dtu",
+      " thay dổi mật khẩu mail trường",
+      " cách cài mật khẩu mail trường",
+      "đổi mật khẩu mail trường",
+      "đổi mật khẩu mail dtu",
+      "đổi password mail trường",
+      "đổi password mail dtu",
+      "nhập mật khẩu mới cho mail trường",
+      "nhập mật khẩu mới cho mail dtu"
+    ],
+    "response": "Không cài mật khẩu cho mail DTU được. Bạn vui lòng đăng nhập vào myDTU và chuyển hướng qua mail cảu bạn nhé."
+  },
+  {
+    "tag": "tai_sao_dang_ky_tai_khoan_zoom_@dtu.edu.vn_nhung_khong_thanh_cong_",
+    "patterns": [
+      "tại sao đăng kí tài khoản zoom @dtu.edu.vn không thành công",
+      " tại sao đăng kí tài khoản zoom bằng mail trường không thành công",
+      " tại sao đăng kí tài khoản zoom bằng mail dtu không thành công",
+      " đăng kí tài khoản zoom bằng mail dtu bị lỗi",
+      " lỗi đăng kí tài khoản zoom bằng mail trường không thành công",
+      " lỗi đăng kí tài khoản zoom bằng mail dtu không thành công",
+      "đăng ký tài khoản zoom bằng mail trường bị lỗi",
+      "sửa lỗi đăng ký tài khoản zoom bằng mail trường không thanh công",
+      "đăng ký tài khoản zoom bằng mail trường bị lỗi",
+      "không thành công khi đăng ký tài khoản zoom bằng mail trường",
+      "không thành công khi đăng ký tài khoản zoom bằng mail dtu",
+      "vì sao đăng ký tài khoản zoom bằng mail trường không thành công",
+      "vì sao không thành công khi đăng ký tài khoản zoom bằng mail trường",
+      "lỗi khi đăng ký tài khoản zoom bằng mail trường",
+      "lỗi khi đăng ký tài khoản zoom bằng mail dtu"
+    ],
+    "response": "Lí do có thể là bạn đã từng tạo tài khoản @dtu.edu.vn để dùng thử và hết thời hạn nhưng không nhớ. Bạn vui lòng liên hệ đội ngũ hỗ trợ  kỹ thuật yêu cầu xóa tài khoản đã đăng ký sau đó tạo lại tài khoản mới nhé."
+  },
+  {
+    "tag": "cach_chuyen_lop/suat_khac",
+    "patterns": [
+      "cách chuyển lớp",
+      "chuyển lớp như thế nào",
+      "làm sao để chuyển lớp",
+      "muốn chuyển lớp thì làm sao",
+      "đổi lớp đang học sang lớp mới",
+      "đổi từ lớp này sang lớp khác",
+      "chuyển sang sang học suất khác của lớp",
+      "muốn học giờ khác của lớp",
+      "cách chuyển sang suất khác của lớp"
+    ],
+    "response": "Đầu tiên bạn hãy vào MyDTU hủy lớp bạn không muốn học nữa. Sau đó bạn đăng kí lớp bạn muốn học là được. Chú ý là chỉ đổi lớp đưuocj trong thời gian hệ thống cho phép."
+  },
+  {
+    "tag": "tam_biet",
+    "patterns": [
+      "Tạm biệt",
+      "Chào tạm biệt",
+      "Bye",
+      "Bye bye",
+      "Goodbye",
+      "See you later",
+      "bái bai",
+      "hẹn gặp lại"
+    ],
+    "response": [
+      "Tạm biệt. Nếu bạn còn thắc mắc thì đừng ngại hỏi mình.",
+      "Bái bai. Nếu có thắc mắc thì hãy quay lại đây nha."
+    ]
+  },
+  {
+    "tag": "cam_on",
+    "patterns": ["cảm ơn", "Cảm ơn nha", "Thanks", "Thank you", "cảm ơn bạn"],
+    "response": [
+      "Không có gì. Nếu còn vấn đề gì thì cứ hỏi mình nhé!!!",
+      "Giúp được bạn là mình vui rồi UwU",
+      "Nếu còn vấn đề gì thì cứ hỏi mình nhé?"
+    ]
+  }
+]
