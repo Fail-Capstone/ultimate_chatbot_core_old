@@ -13,9 +13,8 @@ svm_model = pickle.load(open('svm_model.pkl', 'rb'))
 answer = pickle.load(open('answer.pkl', 'rb'))
     
 def get_answer(question):
-    question = text_preprocess(question)
     data_answer = pd.DataFrame(answer)
-    df_question = pd.DataFrame([{"Question": (question)}])
+    df_question = pd.DataFrame([{"Question": (text_preprocess(question))}])
     logistic_predict = logistic_model.predict(df_question["Question"])
     svm_predict = svm_model.predict(df_question["Question"])
     maxPredictProb = (np.ndarray.max(logistic_model.predict_proba(df_question["Question"])))
